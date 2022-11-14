@@ -1,3 +1,14 @@
+---
+const navLinks = [
+  {url: '/', title: 'Главная'},
+  {url: '/categories', title: 'Категории'},
+  {url: '/documents', title: 'Документы'},
+  {url: '/article', title: 'Статья'},
+]
+---
+
+
+
 <nav class="main-nav">
   <div class="main-nav__box">
     <div class="nav__icon-close">
@@ -8,18 +19,14 @@
         <h2 class="nav-grid__title">Меню</h2>
         <div class="mobile-nav">
           <ul class="nav__list list-reset">
-            <li class="nav__item">
-              <a href="/" class="nav__link">Главная</a>
-            </li>                 
-            <li class="nav__item">
-              <a href="/categories" class="nav__link">Категории</a>
-            </li>
-            <li class="nav__item">
-              <a href="/about" class="nav__link">О Компании </a>
-            </li>
-            <li class="nav__item">
-              <a href="tel:+79222538375" class="nav__link">+79222538375</a>
-            </li>                       
+            {
+              navLinks.map ((
+                link =>
+                  <li class="nav__item">
+                    <a class="nav__link" href={link.url}>{link.title}</a>
+                  </li>
+                ))
+            }                    
           </ul>
         </div>
       </div>
