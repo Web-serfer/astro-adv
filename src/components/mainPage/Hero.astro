@@ -4,12 +4,14 @@ import heroImg from '../../images/heroImg.jpg'
 export interface Props {
   title?: string;
   descr?: string;
-  heroImg?: string; 
+  heroImg?: string;
+  alt?: string 
 }
   
 const { 
   title = 'Адвокаты Сургута', 
-  desc = 'Платформа опытных специалистов'  
+  desc = 'Платформа опытных специалистов',
+  alt = 'Адвокаты Сургута'  
 } = Astro.props;
 ---
   
@@ -20,7 +22,7 @@ const {
         src={heroImg} 
         class="lazy loaded"        
         data-ll-status="loaded"
-        alt="Автоюрист Сургут" 
+        alt={alt} 
       >
     </div>
     <div class="hero__content">
@@ -39,7 +41,7 @@ const {
     background-color:#09080f;
   }
 
-  @media only screen and (max-width: 576px){
+  @media (max-width: 576px){
     .hero{
       box-shadow:none;
     }
@@ -68,25 +70,24 @@ const {
     top:0px;
     width:100%;
     height:100%;
-    object-fit:cover;
-   
+    object-fit:cover;   
   }
 
-  @media only screen and (max-width: 992px){
+  @media (max-width: 992px){
     .hero__image{
       min-height:620px;
     }
   }
 
-  @media only screen and (max-width: 768px){
+  @media (max-width: 768px){
     .hero__image{
-        min-height:500px;
+      min-height:500px;
     }
   }
 
-  @media only screen and (max-width: 576px){
+  @media (max-width: 576px){
     .hero__image{
-        min-height:400px;
+      min-height:400px;
     }
   }
 
@@ -103,13 +104,16 @@ const {
   }
 
   .hero__title{
-    font-size:60px;
-    margin:0 0 10px;
-    line-height:1;
+    font-size: 3em;
+    margin: 0 0 10px;
+    line-height: 1;    
+    font-weight: bold;
     color:#fff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
-  @media only screen and (max-width: 576px){
+  @media (max-width: 576px){
     .hero__title{
       font-size:43px;
       margin:0 0 5px;
@@ -122,10 +126,10 @@ const {
     margin:0;
   }
 
-  @media only screen and (max-width: 576px){
+  @media (max-width: 576px){
     .hero__desc{
-        font-size:16px;
-        line-height:21px;
+      font-size:16px;
+      line-height:21px;
     }
   }
 
@@ -146,10 +150,12 @@ const {
     text-align:center;
   }
 
-  @media only screen and (max-width: 576px){
+  @media (max-width: 576px){
     .hero-without-image{
       margin:144px 0 48px;
     }
   }
 </style>
+
+
 
