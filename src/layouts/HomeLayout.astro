@@ -1,9 +1,9 @@
 ---
+import Favicons from '@components/general/Favicons.astro'
 import Header from '@components/general/Header.astro'
 import SearchPanel from '@components/general/SearchPanel.astro'
 
 import Hero from '../components/mainPage/Hero.astro'
-
 import ButtonArrow from '@components/general/ButtonArrow.astro'
 import FooterWidget from '@components/general/FooterWidget.astro'
 import Footer from '@components/general/Footer.astro'
@@ -15,6 +15,7 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -25,6 +26,9 @@ const { title } = Astro.props;
    <meta name='description' content='Платформа Адвокаты Сургута'>   
    <link rel="canonical" href="#">
 
+   <!-- Favicons -->
+    <Favicons />
+    
     <!-- Fonts -->
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
    
