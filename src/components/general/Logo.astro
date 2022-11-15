@@ -1,12 +1,16 @@
+---
+import logo from '../../images/logo.png'
+---
+
 <div class="logo">
   <a class="logo__link" href="/">
-    LOGO
+    <img class="" src={logo} alt="Адвокаты Сургута" />
   </a>
 </div>
 
 
 <style>
-  .logo__link{  
+  .logo__link {  
     font-size:28px;
     line-height:1;
     font-weight:900;
@@ -16,12 +20,10 @@
     text-decoration:none;
     letter-spacing:-1px;
 }
-  .logo__link:hover{
+  .logo__link:hover {
     color: #ff7b7b;
   }
-  .logo__image{
+  .logo__link img {
     max-height:40px;
   }
-
-
 </style>
