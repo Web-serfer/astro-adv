@@ -1,12 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+/* ==== Fonts ==== */
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-Regular.woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+  
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-Italic.woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
 
-/* ==== variable css ==== */
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-SemiBold.woff2");
+  font-display: swap;
+  font-weight: 600;
+}
+  
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-Bold.woff2");
+  font-display: swap;
+  font-weight: 700;
+}    
+
+/* ==== variable ==== */
 :root {
   /* color */  
   --mainColor: #ff7b7b;
 }
-
-
 
 *,*::after,*::before{
   margin: 0;
@@ -15,26 +41,26 @@
 }
 
 body{
-  font-family: 'Roboto Mono', monospace;
-  font-size:18px;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 18px;
   letter-spacing: .05em;
-  line-height:1.7;
-  color:#eee;
-  background-color:#0f0e15;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  overflow-x:hidden
+  line-height: 1.7;
+  color: #eee;
+  background-color: #0f0e15;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body.is-in::after{
-  visibility:hidden;
-  opacity:0;
-  pointer-events:none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 body input,body textarea{
-  border:1px solid #eee;
-  outline:none;
+  border: 1px solid #eee;
+  outline: none;
 }
 @media (max-width: 576px){
   body{
