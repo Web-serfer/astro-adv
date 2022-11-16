@@ -1,4 +1,5 @@
 ---
+import '../styles/main.css'
 import Favicons from '@components/general/Favicons.astro'
 import Header from '@components/general/Header.astro'
 import SearchPanel from '@components/general/SearchPanel.astro'
@@ -25,8 +26,7 @@ const { title } = Astro.props;
    
    <meta name='description' content='Платформа Адвокаты Сургута'>   
    <link rel="canonical" href="https://adv-surgut.ru">
-
-   <!-- Favicons -->
+  
     <Favicons />
     
     <!-- Fonts -->
@@ -36,7 +36,7 @@ const { title } = Astro.props;
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">  
 
    <!-- Styles CSS -->
-   <link rel="stylesheet" href="/styles/globals.css" />
+  
    
    
    <title>{title}</title>
