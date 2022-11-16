@@ -32,8 +32,8 @@ const navLinks = [
 
 <style>  
   .navigation {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
   .top-nav .nav__list .nav__item {
@@ -58,40 +58,11 @@ const navLinks = [
     color: var(--main-color);
   }
 
-  @media only screen and (max-width: 992px) {
+  @media (max-width: 992px) {
     .top-nav{
       display: none;
     }
-  }
-
-  .mobile-nav .nav__list .nav__item {
-    display: block;
-    margin-bottom: 36px;
-    text-align: center;
-  }
-
-  .mobile-nav .nav__list .nav__item:last-child {
-    margin-bottom: 0;
-  }
-
-  .mobile-nav .nav__list .nav__item .nav__link {
-    position:relative;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #eee;
-  }
-
-  .mobile-nav .nav__list .nav__item .nav__link:hover {
-    color: #ff7b7b;
-  }
-
-  @media only screen and (max-width: 576px) {
-    .mobile-nav .nav__list .nav__item {
-      margin-bottom: 28px;
-    }
-  }
+  }  
   
   .nav-buttons {
     display: flex;
@@ -124,7 +95,7 @@ const navLinks = [
     text-transform: uppercase;
   }
 
-  @media only screen and (max-width: 992px){
+  @media (max-width: 992px){
     .nav-buttons .search-button span{
         display: none;
     }
@@ -135,7 +106,7 @@ const navLinks = [
     margin-right: 16px;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media (max-width: 992px) {
     .nav-buttons .nav__icon-menu {
       display: block;
     }
