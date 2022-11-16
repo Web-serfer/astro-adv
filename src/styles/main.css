@@ -14,8 +14,7 @@
 *{
   font-family: 'Roboto', monospace;
   line-height: 1.8em;
-  box-sizing: border-box;
-  /* color: var(--mainTextColor); */
+  box-sizing: border-box;  
   scroll-behavior: smooth;
 }
 
@@ -36,10 +35,10 @@
 }
 
 .col-12 {
-width: 100%;
+  width: 100%;
 }
 
 .col {
-padding-left: 16px;
-padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
