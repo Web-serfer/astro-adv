@@ -44,14 +44,14 @@ const { title } = Astro.props;
 
 <body>
     <Header />
-    <SearchPanel />
+    <SearchPanel client:media />
     <main class="content" aria-label="Content"> 
     <Hero /> 
       <slot />
     </main>
-    <ButtonArrow />  
-    <FooterWidget />
-    <Footer />
+    <ButtonArrow client:idle />  
+    <FooterWidget client:idle />
+    <Footer client:idle />
 
 <!-- JS Scripts -->
   <script is:inline src="/scripts/jquery-3.5.1.min.js"></script>
