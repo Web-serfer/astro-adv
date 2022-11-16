@@ -1,7 +1,6 @@
 ---
-import '../../styles/main.css'
 import SearchCategories from '../general/SearchCategories.astro'
-import Subscrime from '../general/footerWidget/Subscribe.astro'
+import Subscribe from '../general/footerWidget/Subscribe.astro'
 import img100 from "../../images/footerImg/100.jpg"
 import img110 from "../../images/footerImg/110.jpg"
 import admin from '../../images/admin.jpg'
@@ -107,7 +106,7 @@ import admin from '../../images/admin.jpg'
       </div>
 
       <SearchCategories />
-      <Subscrime />
+      <Subscribe />
       
     </div>
   </div>
@@ -115,43 +114,43 @@ import admin from '../../images/admin.jpg'
 
 <style>
   .footer-widgets{
-  padding:64px 0 32px
+  padding: 64px 0 32px;
 }
 
   .footer-widgets .row .col{
-    flex-grow:1;
+    flex-grow: 1;
   }
 
   @media only screen and (max-width: 768px){
     .footer-widgets{
-      padding:48px 0 0;
+      padding: 48px 0 0;
     }
   }
 
   .widget{
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 768px){
     .widget{
-      margin-bottom:64px;
+      margin-bottom: 64px;
     }
 }
 
   .recent-posts{
     display:flex;
     align-items:center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
 
   .recent-posts:last-child{
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 
   @media only screen and (max-width: 360px){
     .recent-posts{
         flex-wrap:wrap;
-        margin-bottom:32px;
+        margin-bottom: 32px;
     }
   }
 
@@ -160,44 +159,44 @@ import admin from '../../images/admin.jpg'
   }
   
   .recent-posts__image{
-    position:relative;
-    display:block;
-    width:100%;
-    max-width:174px;
-    height:144px;
-    margin-right:20px;
-    border-radius:16px;
-    overflow:hidden;
-    background:#09080f;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 174px;
+    height: 144px;
+    margin-right: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #09080f;
   }
 
   .recent-posts__image img{
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    border-radius:16px;
-    object-fit:cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
   }
 
   @media only screen and (max-width: 360px){
     .recent-posts__image{
-      height:auto;
-      max-width:100%;
-      padding-top:56.6%;
-      margin:0 0 20px;
+      height: auto;
+      max-width: 100%;
+      padding-top: 56.6%;
+      margin: 0 0 20px;
     }
   }
 
   .recent-posts__content .recent-posts__title{
-    font-size:18px;
-    margin:8px 0;
+    font-size: 18px;
+    margin: 8px 0;
   }
 
   .recent-posts__content .article__author-image{
-    width:28px;
-    height:28px;
+    width: 28px;
+    height: 28px;
     position: relative;
     display: inline-block;
     width: 36px;
@@ -208,7 +207,4 @@ import admin from '../../images/admin.jpg'
     border-radius: 50%;
     overflow: hidden;
   } 
-
- 
- 
 </style>
